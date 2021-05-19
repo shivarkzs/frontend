@@ -1,9 +1,9 @@
 pipeline { 
     agent any 
 
-    steges {
+    stages {
 
-     steges ('prepare artifacts') {
+     stage('prepare artifacts') {
        steps {
            sh '''
            cd static
