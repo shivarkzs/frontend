@@ -3,9 +3,9 @@ pipeline {
 
     stages {
 
-     stage('prepare artifacts') {
+     stage('Prepare Artifacts') {
        steps {
-           sh '''
+         sh '''
            cd static
            zip -r ../frontend.zip *
            '''
